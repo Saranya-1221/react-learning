@@ -1,0 +1,24 @@
+{
+  "name": "react-learning",
+  "version": "1.0.0",
+  "description": "react class",
+  "source": "index.html",
+  "scripts": {
+    "test": "test",
+    "start": "parcel index.html",
+    "build": "parcel build"
+  },
+  "author": "Saranya",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
