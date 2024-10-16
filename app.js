@@ -1,22 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const element = React.createElement('h1',{id: 'heading'}, 'Hello world by React');
+// React Element
+// const element = (<h1 className="heading" tabIndex="5">Hello world by JSX</h1>);
 
-const nestElement = React.createElement('div', {id: 'parent'},
-    [
-        React.createElement('div', {id: 'child1'},
-        [   
-            React.createElement('h1', {},'I am h1 tag'),
-            React.createElement('h2', {},'I am h2 tag')
-        ]),
-        React.createElement('div', {id: 'child2'},
-        [   
-            React.createElement('h1', {},'I am h1 tag'),
-            React.createElement('h2', {},'I am h2 tag')
-        ]),
-    ]
-)
-const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(nestElement);
-root.render(element);
+// React Functional Component
+
+const Title = () => <h1 className="heading">Hello world by JSX</h1>;
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+    <h1 className="heading">Hello world by React Functional component</h1>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent />);
