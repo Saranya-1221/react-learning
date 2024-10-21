@@ -1,18 +1,97 @@
-#heading{
-    color: red;
+.layout{
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.HeaderComponent{
+.header{
     display: flex;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid aliceblue;
+    box-shadow: 4px 8px 8px aliceblue;
+    width: 95%;
+    padding: 0px 50px;
+}
+
+.logo{
+    width: 150px;
+    margin: 4px;
+}
+
+.Nav_con{
+    display: flex;
+    list-style-type: none;
+    margin: 4px;
+    width: 50%;
+}
+
+.Nav_con>li{
+    padding: 4px;
+    width: 20%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+}
+
+.Nav_con>li:hover{
+    color:chocolate;
+    cursor: pointer;
+}
+
+.varCon{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    overflow-x: auto;
+    padding: 0px 50px;
+}
+
+.VarConTitle{
+    width: 90%;
+    padding: 32px 50px 0px 50px;
+    font-size: 22px;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.foodVar{
+    margin: 0px 8px;
+    display: block;
+    text-decoration: none;
+   /*  width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(223, 230, 235); */
+}
+
+.foodVar:hover{
+    cursor: pointer;
+    box-shadow: 4px 8px 8px rgb(210, 219, 227);
+}
+
+.foodVar>img{
+    padding-top: 16px;
+    width: 150px; 
+}
+
+.res_con{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    padding: 32px 100px 0px 100px;
+    justify-items: stretch;
     justify-content: space-evenly;
+    gap: 50px;
 }
 
-.search{
-    display: flex;
-    align-self: center;
-    padding: 4px 2px;
-    border: 2px groove rgb(119, 125, 3);
-    border-radius: 4px;
-    color: cadetblue;
+.resCard{
+    display: block;
+    text-decoration: none;
+}
+
+.resCard>img{
+    width: 200px;
+    height: 200px;
 }
